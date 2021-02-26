@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <h1>Welcome 
+            {{request.user}}, here are your Todos
+        </h1>
+        <h4><a href="/register/">Create new Account</a> or <a href="/accounts/login/">Log In</a></h4>
+    </head>
+    <body>
+    <ul>
+    {% for x in todos %}
+    {% if x.Name == User%}
+    <li><h3>{{ x.Content }} <form action="{% url 'todo_delete' x.id %}">{% csrf_token %}<input type='submit' value="Delete_Todo"></form></h3></li>
+    {% endif %}
+    {% endfor %}
+    </ul>
+    <a href="/newTodo/">Create New Todo</a>
+    </body>
+</html>

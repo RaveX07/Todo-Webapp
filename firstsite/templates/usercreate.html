@@ -1,0 +1,11 @@
+<html>
+    <head><h1>Create new User</h1></head>
+    <body>
+        <form method="POST" action=""> {% csrf_token %}
+            {{ form.as_p }} 
+
+            <input type='submit' value='Create' />
+        </form>
+        <a href="/">Go Back to Overview</a>
+    </body>
+</html>
