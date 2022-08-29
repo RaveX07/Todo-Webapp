@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(97, 97, 97);
+    font-family: sans-serif;
+    line-height: 50%;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    padding-left: 22px;
+    padding-top: 18px;
+}
+
+.overview {
+    background-color: gray;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 12px;
+}
