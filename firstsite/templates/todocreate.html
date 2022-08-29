@@ -1,11 +1,19 @@
+<!DOCTYPE html>
 <html>
-    <head><h1>Create new Todo</h1></head>
+    <head>
+        <title>New Todo</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static '/css/todoCreate.css'%}">
+    </head>
     <body>
+        <h1>Create new Todo</h1> 
         <form method='POST'> {% csrf_token %}
             {{ form.as_p }}
 
             <input type='submit' value='Save'/>
         </form>
-        <a href="/">Go Back to Overview</a>
+        <form action="/">
+            <input class="overview" type="submit" value="Back to Overview" />
+        </form>
     </body>
 </html>
